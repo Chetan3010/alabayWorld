@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kumbh+Sans:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'BaronKuffner';
+    src: url('/fonts/BaronKuffner.woff2');
+}
+
+@font-face {
+    font-family: 'CheeseBurga';
+    src: url('/fonts/CheeseBurga.woff2');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    position: relative;
+    overflow: hidden;
+}
+
+.drawerWrapper {
+    width: 90%;
+    height: 100vh;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 94%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 15px 15px 0 0;
+    overflow-y: scroll;
+    transition: all 300ms linear;
+}

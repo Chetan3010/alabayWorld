@@ -1,0 +1,47 @@
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/images/landing-page.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.title {
+    font-family: 'CheeseBurga';
+    background: linear-gradient(180deg, #FFF280 0%, #7EFF5E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: -5px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 7rem;
+    filter: drop-shadow(8px 12px #0F1B29);
+    -webkit-text-stroke: 2px #0F1B29;
+}
+
+.descWrapper {
+    width: 100vw;
+    background-color: black;
+    padding: 5px 10px;
+    position: absolute;
+    left: 0;
+    bottom: 20%;
+}
+
+.desc {
+    font-family: 'CheeseBurga';
+    font-size: 2.3rem;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.desc span {
+    background: linear-gradient(180deg, #FFF280FF 0%,#FFA800FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
