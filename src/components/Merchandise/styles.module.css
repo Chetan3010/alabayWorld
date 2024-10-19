@@ -1,0 +1,69 @@
+.merchandise {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin-top: 5rem;
+    padding: 0 15rem;
+    margin-bottom: 20rem;
+}
+
+.merchandiseTitle {
+    font-family: 'CheeseBurga';
+    font-size: 5rem;
+    color: #FFA800;
+    font-weight: 400;
+}
+
+.merchandiseWrapper {
+    margin-top: 2rem;
+    position: relative;
+    width: 100%;
+    height: 120%;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-image: url('/images/merch/black-hoddie-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.merchandiseWrapper button {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.merchandiseWrapper > button:first-child {
+    left: 1rem;
+}
+
+.merchandiseWrapper > button:last-child {
+    right: 1rem;
+}
+
+.merchandiseWrapper div {
+    width: 80%;
+    display: flex;
+    gap: 100%;
+}
+
+.merchandiseWrapper img {
+    width: 100%;
+}
+
+.merchandiseWrapper div img:first-child {
+    transform: translateX(-0%);
+}

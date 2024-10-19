@@ -3,6 +3,8 @@ import LandingPage from "./components/LandingPage/LandingPage";
 import History from "./components/History/History";
 import Vision from "./components/Vision/Vision";
 import Roadmap from "./components/Roadmap/Roadmap";
+import Tokenomics from "./components/Tokenomics/Tokenomics";
+import Merchandise from "./components/Merchandise/Merchandise";
 
 const App = () => {
     const drawerRef = useRef(null);
@@ -31,6 +33,8 @@ const App = () => {
                 <History />
                 <Vision />
                 <Roadmap />
+                <Tokenomics />
+                <Merchandise />
             </div>
         </div>
     );
