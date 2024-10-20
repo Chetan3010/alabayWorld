@@ -10,6 +10,11 @@
     src: url('/fonts/CheeseBurga.woff2');
 }
 
+@font-face {
+    font-family: 'Helvetica';
+    src: url('/fonts/Helvetica.woff2');
+}
+
 * {
     box-sizing: border-box;
     margin: 0;

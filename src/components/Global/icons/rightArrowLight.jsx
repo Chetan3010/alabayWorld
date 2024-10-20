@@ -1,7 +1,7 @@
 import React from "react";
 import styles from './styles.module.css'
 
-const rightArrowLight = ({ color= '#000000' }) => (
+const RightArrowLight = ({ color= '#000000' }) => (
     <svg
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
@@ -19,4 +19,4 @@ const rightArrowLight = ({ color= '#000000' }) => (
     </svg>
 );
 
-export default rightArrowLight;
+export default RightArrowLight;

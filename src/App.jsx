@@ -5,6 +5,8 @@ import Vision from "./components/Vision/Vision";
 import Roadmap from "./components/Roadmap/Roadmap";
 import Tokenomics from "./components/Tokenomics/Tokenomics";
 import Merchandise from "./components/Merchandise/Merchandise";
+import Games from "./components/Games/Games";
+import SocialMediaLinks from "./components/Footer/SocialMediaLinks";
 
 const App = () => {
     const drawerRef = useRef(null);
@@ -35,6 +37,8 @@ const App = () => {
                 <Roadmap />
                 <Tokenomics />
                 <Merchandise />
+                <Games />
+                <SocialMediaLinks />
             </div>
         </div>
     );

@@ -6,7 +6,6 @@
     height: 100vh;
     margin-top: 5rem;
     padding: 0 15rem;
-    margin-bottom: 20rem;
 }
 
 .merchandiseTitle {
@@ -20,16 +19,16 @@
     margin-top: 2rem;
     position: relative;
     width: 100%;
-    height: 120%;
+    height: 560px;
     border-radius: 1rem;
     overflow: hidden;
-    background-image: url('/images/merch/black-hoddie-bg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-image 0.3s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 .merchandiseWrapper button {
@@ -44,6 +43,18 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 10;
+}
+
+.merchandiseWrapper > h1 {
+    position: absolute;
+    top: 5rem;
+    right: 6rem;
+    font-family: 'Kumbh Sans';
+    font-size: 1.2rem;
+    color: #000000;
+    font-weight: 800;
+    z-index: 10;
 }
 
 .merchandiseWrapper > button:first-child {
@@ -54,16 +65,32 @@
     right: 1rem;
 }
 
-.merchandiseWrapper div {
-    width: 80%;
-    display: flex;
-    gap: 100%;
-}
-
-.merchandiseWrapper img {
+.merchandiseItems {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
-.merchandiseWrapper div img:first-child {
-    transform: translateX(-0%);
+.merchandiseScroller {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.merchandiseItem {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.merchandiseItem img {
+    width: 50rem;
+    object-fit: cover;
 }

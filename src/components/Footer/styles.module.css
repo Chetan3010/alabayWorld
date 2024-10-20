@@ -1,0 +1,95 @@
+.socialMediaLinks {
+    padding: 0 5rem;
+    padding-bottom: 10rem;
+    overflow: hidden;
+}
+
+.socialMediaLinks>h1 {
+    font-family: 'CheeseBurga';
+    font-weight: 400;
+    color: #FFA800;
+    font-size: 7rem;
+}
+
+.socialMediaLinksWrapper {
+    width: 100%;
+    display: flex;
+    position: relative;
+    top: -20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialDogWrapper {
+    position: relative;
+}
+
+.socialDogWrapper>img {
+    width: 40rem;
+}
+
+.socialDogWrapper > div {
+    position: absolute;
+    background: url('/images/social-dog.png');
+    background-size: 40rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    width: 40rem;
+    height: 100%;
+    left: 0;
+    top: 75%;
+    opacity: 0.5;
+    transform: rotateX(180deg);
+    mask-image: linear-gradient(to bottom, transparent 65%, black 100%);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 65%, black 100%);
+}
+
+.linksWrapper {
+    width: 26rem;
+    height: 16rem;
+    position: relative;
+}
+
+.linksWrapper > svg {
+    width: 26rem;
+    height: 16rem;
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.5));
+}
+
+.links {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-60%);
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.link > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #353535;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.link img {
+    width: 20px;
+    height: 20px;
+}
+
+.link h5 {
+    font-family: 'Montserrat';
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
