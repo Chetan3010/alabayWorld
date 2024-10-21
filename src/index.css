@@ -38,6 +38,7 @@ body {
     height: 100vh;
     background-color: #FFFFFF;
     position: absolute;
+    z-index: 10;
     top: 94%;
     left: 50%;
     transform: translateX(-50%);
@@ -58,7 +59,6 @@ button {
 
 /* Chrome, Edge and Safari */
 *::-webkit-scrollbar {
-    height: 12px;
     width: 4px;
 }
 

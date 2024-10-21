@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import styles from "./styles.module.css";
 import RightArrow from "../Global/icons/RightArrow";
 import { Link } from "react-router-dom";
-import RightArrowLight from "../Global/icons/RightArrowLight";
+import RightArrowLight from "../Global/icons/rightArrowLight";
 
 const Games = () => {
     const [currentGame, setCurrentGame] = useState(0);

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./styles.module.css";
 import LeftArrowLight from "../Global/icons/LeftArrowLight";
-import RightArrowLight from "../Global/icons/RightArrowLight";
+import RightArrowLight from "../Global/icons/rightArrowLight";
 
 const Merchandise = () => {
     const [currentItem, setCurrentItem] = useState(0);

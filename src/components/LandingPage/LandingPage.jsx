@@ -12,6 +12,7 @@ const LandingPage = () => {
                 <span>Join us</span> in celebrating the <span>strength, loyalty, and heritage</span> of the Alabay breed.
             </p>
         </div>
+        <img src="/images/landing-page.png" alt="landing-page" />
     </div>
   )
 }
