@@ -8,7 +8,7 @@ const History = () => {
             <div className={styles.historyWrapper}>
                 <div className={styles.handler}></div>
                 <div className={styles.contentWrapper}>
-                    <div style={{ position: "relative" }}>
+                    <div style={{ position: "relative", height: 'fit-content' }}>
                         <img
                             className={styles.contentImage}
                             src="/images/jumping-dog.png"

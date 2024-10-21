@@ -1,7 +1,7 @@
 .roadmapWrapper {
     margin-top: 5rem;
     width: 100%;
-    padding: 0 4rem;
+    padding: 0 clamp(2rem, 4vw, 4rem);
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -10,7 +10,7 @@
 .roadmapTitle {
     font-family: 'CheeseBurga';
     color: #FFFFFF;
-    font-size: 6rem;
+    font-size: 9vw;
     font-weight: 400;
 }
 
@@ -21,21 +21,21 @@
 
 .roadmapInfo {
     width: 50%;
-    margin-top: 5rem;
+    margin-top: clamp(2.4rem, 1.5vw, 5rem);
 }
 
 .roadmapInfo p {
     font-family: 'Kumbh Sans';
     color: #353535;
-    font-size: 32px;
+    font-size: clamp(8px, 2vw, 32px);
     font-weight: 800;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.6rem;
 }
 
 .roadmapInfo span {
     font-family: 'Kumbh Sans';
     color: #FFA800;
-    font-size: 32px;
+    font-size: clamp(10px, 2vw, 32px);
     font-weight: 800;
 }
 
@@ -44,24 +44,24 @@
 }
 
 .roadmapMedia img {
-    width: 30rem;
+    width: 40vw;
     position: relative;
     bottom: 40px;
-    right: 20px;
+    right: clamp(0, 1vw, 20px);
     filter: drop-shadow(0 15px 10px #0000007b);
 }
 
 .roadmapMedia div {
     position: absolute;
     background: url('/images/guide-dog.png');
-    background-size: 30rem;
+    background-size: 40vw;
     background-position: center;
     background-repeat: no-repeat;
     z-index: -1;
-    width: 30rem;
+    width: 40vw;
     height: 100%;
-    left: -4%;
-    top: 82%;
+    left: -5%;
+    top: 67%;
     transform: rotateX(180deg);
     opacity: 0.5;
     filter: blur(2px);
@@ -71,17 +71,17 @@
 
 .roadmapPosters {
     width: 100%;
-    margin-top: 5rem;
-    padding: 0 3rem;
+    margin-top: clamp(2.5rem, 1.5vw, 5rem);
+    padding: 0 clamp(2px, 2vw, 4rem);
     display: flex;
-    gap: 1rem;
+    gap: clamp(3px, 1vw, 1rem);
 }
 
 .roadmapPosters > div {
-    width: 25%;
+    width: calc(25% - 2px);
     display: flex;
     flex-direction: column;
-    gap: 2;
+    gap: 2px;
     align-items: center;
     padding-top: 14px;
     mask-image: linear-gradient(to bottom, white 60%, transparent 95%);
@@ -90,7 +90,7 @@
 
 .roadmapPosters > div:nth-child(1){
     background: linear-gradient(180.00deg, rgb(219, 199, 12),rgba(255, 242, 128, 0) 100%);
-    border-top-left-radius: 50px;
+    border-top-left-radius: clamp(25px, 1vw, 50px);
 }
 
 .roadmapPosters > div:nth-child(2){
@@ -103,23 +103,45 @@
 
 .roadmapPosters > div:nth-child(4){
     background: linear-gradient(178.21deg, rgb(143, 58, 60) 0.409%,rgba(143, 58, 60, 0) 95.851%);
-    border-top-right-radius: 50px;
+    border-top-right-radius: clamp(25px, 1vw, 50px);
 }
 
 .roadmapPosters h1 {
-    width: 85%;
+    width: 90%;
     font-family: 'Montserrat';
     text-align: center;
     font-weight: 800;
-    font-size: 28px;
+    font-size: clamp(10px, 2vw, 28px);
     color: #FFFFFF;
-    height: 7rem;
+    height: clamp(3rem, 10vw, 7rem);
 }
 
 .roadmapPosters span {
-    font-size: 24px;
+    font-size: clamp(7px, 2vw, 24px);
 }
 
 .roadmapPosters img {
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .roadmapWrapper {
+        margin-top: 2rem;
+    }
+
+    .roadmapMedia img {
+        top: 0;
+    }
+
+    .roadmapInfo span {
+        line-height: 0;
+    }
+    
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .roadmapWrapper {
+        margin-top: 6rem;
+    }
 }

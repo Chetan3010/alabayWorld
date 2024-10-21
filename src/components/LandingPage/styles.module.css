@@ -1,6 +1,6 @@
 .wrapper {
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
     background-image: url('/images/landing-page.png');
     background-size: cover;
     background-position: center;
@@ -14,12 +14,14 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
-    letter-spacing: -5px;
+    letter-spacing: 0;
     text-align: center;
     font-weight: 100;
-    font-size: 7rem;
-    filter: drop-shadow(8px 12px #0F1B29);
+    font-size: clamp(3rem, 10vw, 7rem);
+    filter: drop-shadow(clamp(4px, 1vw, 12px) clamp(8px, 2vw, 16px) #0F1B29);
     -webkit-text-stroke: 2px #0F1B29;
+    padding-top: 1rem;
+    line-height: clamp(1, 0, 1.5);
 }
 
 .descWrapper {
@@ -28,12 +30,12 @@
     padding: 5px 10px;
     position: absolute;
     left: 0;
-    bottom: 20%;
+    bottom: 15%;
 }
 
 .desc {
     font-family: 'CheeseBurga';
-    font-size: 2.3rem;
+    font-size: clamp(18px, 2.5vw, 2.5vw);
     color: #FFFFFF;
     text-align: center;
 }

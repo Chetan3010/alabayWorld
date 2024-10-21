@@ -41,11 +41,12 @@ const Merchandise = () => {
     };
 
     const handlePrevItem = () => {
-        const prevItem = (currentItem - 1 + merchandiseItems.length) % merchandiseItems.length;
+        const prevItem =
+            (currentItem - 1 + merchandiseItems.length) %
+            merchandiseItems.length;
         setCurrentItem(prevItem);
         merchBgRef.current.style.backgroundImage = `url(${merchandiseItems[prevItem].backgroundImage})`;
     };
-
 
     return (
         <div className={styles.merchandise}>
@@ -62,11 +63,17 @@ const Merchandise = () => {
                 </button>
                 <h1>Coming Soon...</h1>
                 <div className={styles.merchandiseItems}>
-                    <div className={styles.merchandiseScroller} style={{ transform: `translateX(-${currentItem * 100}%)` }}>
+                    <button className={styles.discoverBtn}>Discover</button>
+                    <div
+                        className={styles.merchandiseScroller}
+                        style={{
+                            transform: `translateX(-${currentItem * 100}%)`,
+                        }}
+                    >
                         {merchandiseItems.map((item) => (
                             <div
-                                key={item.id}
-                                className={styles.merchandiseItem}
+                            key={item.id}
+                            className={styles.merchandiseItem}
                             >
                                 <img src={item.image} alt={item.title} />
                             </div>

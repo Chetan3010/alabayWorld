@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './styles.module.css'
+
 const BubbleSpeech = ({ }) => (
   <svg
     viewBox="0 0 746.074 513.6"

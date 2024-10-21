@@ -29,7 +29,6 @@ const Games = () => {
     const handleNext = () => {
         const nextGame = (currentGame + 1) % games.length;
         setCurrentGame(nextGame);
-        clearInterval(intervalRef.current);
         clearTimeout(delayRef.current);
         delayRef.current = setTimeout(() => {
             intervalRef.current = setInterval(handleNext, 7000);
@@ -37,14 +36,12 @@ const Games = () => {
     };
 
     useEffect(() => {
-        const startInterval = () => {
+        intervalRef.current = setInterval(handleNext, 7000);
+
+        return () => {
             clearInterval(intervalRef.current);
-            intervalRef.current = setInterval(handleNext, 7000);
+            clearTimeout(delayRef.current);
         };
-
-        startInterval();
-
-        return () => clearInterval(intervalRef.current);
     }, [handleNext]);
 
     return (

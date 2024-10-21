@@ -1,6 +1,6 @@
 .socialMediaLinks {
-    padding: 0 5rem;
-    padding-bottom: 10rem;
+    padding: 0 clamp(1rem, 5vw, 5rem);
+    padding-bottom: clamp(2rem, 5vw, 10rem);
     overflow: hidden;
 }
 
@@ -8,7 +8,7 @@
     font-family: 'CheeseBurga';
     font-weight: 400;
     color: #FFA800;
-    font-size: 7rem;
+    font-size: clamp(3rem, 10vw, 7rem);
 }
 
 .socialMediaLinksWrapper {
@@ -25,17 +25,17 @@
 }
 
 .socialDogWrapper>img {
-    width: 40rem;
+    width: clamp(10rem, 40vw, 40rem);
 }
 
 .socialDogWrapper > div {
     position: absolute;
     background: url('/images/social-dog.png');
-    background-size: 40rem;
+    background-size: clamp(10rem, 30vw, 40rem);
     background-position: center;
     background-repeat: no-repeat;
     z-index: -1;
-    width: 40rem;
+    width: clamp(10rem, 30vw, 40rem);
     height: 100%;
     left: 0;
     top: 75%;
@@ -46,29 +46,29 @@
 }
 
 .linksWrapper {
-    width: 26rem;
-    height: 16rem;
+    width: clamp(10rem, 40vw, 28rem);
+    height: clamp(8rem, 30vw, 18rem);
     position: relative;
 }
 
 .linksWrapper > svg {
-    width: 26rem;
-    height: 16rem;
+    width: clamp(10rem, 40vw, 28rem);
+    height: clamp(8rem, 30vw, 18rem);
     filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.5));
 }
 
 .links {
     position: absolute;
     top: 50%;
-    left: 20%;
-    transform: translateY(-60%);
+    left: 50%;
+    transform: translate(-60%, -60%);
 }
 
 .link {
     display: flex;
     align-items: center;
-    gap: 0.8rem;
-    margin: 1rem 0;
+    gap: clamp(0.4rem, 2vw, 0.8rem);
+    margin: clamp(0.5rem, 2vw, 1rem) 0;
     cursor: pointer;
 }
 
@@ -78,18 +78,19 @@
     justify-content: center;
     background-color: #353535;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: clamp(24px, 4vw, 5rem);
+    height: clamp(24px, 4vw, 5rem);
 }
 
 .link img {
-    width: 20px;
-    height: 20px;
+    width: clamp(12px, 2vw, 4rem);
+    height: clamp(12px, 2vw, 4rem);
 }
 
 .link h5 {
     font-family: 'Montserrat';
     color: #fff;
     font-weight: 800;
-    font-size: 1.2rem;
+    font-size: clamp(10px, 2vw, 1.2rem);
+    white-space: nowrap;
 }
