@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "./styles.module.css";
 import LeftArrowLight from "../Global/icons/LeftArrowLight";
 import RightArrowLight from "../Global/icons/RightArrowLight";
@@ -6,31 +6,32 @@ import RightArrowLight from "../Global/icons/RightArrowLight";
 const Merchandise = () => {
     const [currentItem, setCurrentItem] = useState(0);
     const merchBgRef = useRef(null);
+    const intervalRef = useRef(null);
 
     const merchandiseItems = [
         {
             id: 0,
             title: "BLUE_CAP",
             image: "/images/merch/blue-cap.png",
-            backgroundImage: "/images/merch/blue-cap-bg.png",
+            backgroundImage: "/images/merch/blue-cap-bg.jpg",
         },
         {
             id: 1,
             title: "PINK_TEE",
             image: "/images/merch/pink-tee.png",
-            backgroundImage: "/images/merch/pink-tee-bg.png",
+            backgroundImage: "/images/merch/pink-tee-bg.jpg",
         },
         {
             id: 2,
             title: "YELLOW_TEE",
             image: "/images/merch/yellow-tee.png",
-            backgroundImage: "/images/merch/yellow-tee-bg.png",
+            backgroundImage: "/images/merch/yellow-tee-bg.jpg",
         },
         {
             id: 3,
             title: "BLACK_HOODIE",
             image: "/images/merch/black-hoddie.png",
-            backgroundImage: "/images/merch/black-hoddie-bg.png",
+            backgroundImage: "/images/merch/black-hoddie-bg.jpg",
         },
     ];
 
@@ -47,6 +48,14 @@ const Merchandise = () => {
         setCurrentItem(prevItem);
         merchBgRef.current.style.backgroundImage = `url(${merchandiseItems[prevItem].backgroundImage})`;
     };
+
+    useEffect(() => {
+        intervalRef.current = setInterval(handleNextItem, 5000);
+
+        return () => {
+            clearInterval(intervalRef.current);
+        };
+    }, [currentItem]);
 
     return (
         <div className={styles.merchandise}>
@@ -72,8 +81,8 @@ const Merchandise = () => {
                     >
                         {merchandiseItems.map((item) => (
                             <div
-                            key={item.id}
-                            className={styles.merchandiseItem}
+                                key={item.id}
+                                className={styles.merchandiseItem}
                             >
                                 <img src={item.image} alt={item.title} />
                             </div>

@@ -32,7 +32,7 @@ const Games = () => {
         clearTimeout(delayRef.current);
         delayRef.current = setTimeout(() => {
             intervalRef.current = setInterval(handleNext, 7000);
-        }, 5000);
+        }, 10000);
     };
 
     useEffect(() => {

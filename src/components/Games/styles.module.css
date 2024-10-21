@@ -83,7 +83,7 @@
     z-index: 10;
 }
 
-svg {
+.games svg {
     width: clamp(0.8rem, 2vw, 2rem);
 }
 
@@ -163,7 +163,7 @@ svg {
     cursor: pointer;
 }
 
-svg {
+.gamePreview svg {
     width: clamp(10px, 2vw, 1.6rem);
 }
 

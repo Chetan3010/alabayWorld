@@ -17,8 +17,8 @@
     letter-spacing: 0;
     text-align: center;
     font-weight: 100;
-    font-size: clamp(3rem, 10vw, 7rem);
-    filter: drop-shadow(clamp(4px, 1vw, 12px) clamp(8px, 2vw, 16px) #0F1B29);
+    font-size: clamp(3rem, 8vw, 6rem);
+    filter: drop-shadow(clamp(4px, 0.6vw, 12px) clamp(4px, 0.6vw, 14px) #0F1B29);
     -webkit-text-stroke: 2px #0F1B29;
     padding-top: 1rem;
     line-height: clamp(1, 0, 1.5);

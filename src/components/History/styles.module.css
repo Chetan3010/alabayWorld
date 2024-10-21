@@ -37,6 +37,7 @@
     background-repeat: no-repeat;
     width: 40vw;
     height: 100%;
+    z-index: -1;
     left: 0;
     top: 67%;
     transform: rotateX(180deg);

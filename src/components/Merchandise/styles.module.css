@@ -47,6 +47,10 @@
     z-index: 10;
 }
 
+.merchandise svg {
+    width: clamp(0.8rem, 2vw, 2rem);
+}
+
 .discoverBtn {
     font-family: 'Kumbh Sans';
     font-size: clamp(0.7rem, 2vw, 1.2rem);
@@ -60,28 +64,11 @@
     transform: translateX(-50%);
     z-index: 99;
     border: none;
-
-    .merchandiseWrapper>button:active {
-        animation: bounce 0.3s;
-    }
-
-    @keyframes bounce {
-
-        0%,
-        20%,
-        50%,
-        80%,
-        100% {
-            transform: translateY(0);
-        }
-
-        40% {
-            transform: translateY(-10px);
-        }
-
-        60% {
-            transform: translateY(-5px);
-        }
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+    &:hover {
+        background-color: #1a1a00;
     }
 }
 
@@ -97,11 +84,11 @@
 }
 
 .merchandiseWrapper>button:first-child {
-    left: 1rem;
+    left: clamp(0.5rem, 1vw, 1rem);
 }
 
 .merchandiseWrapper>button:last-child {
-    right: 1rem;
+    right: clamp(0.5rem, 1vw, 1rem);
 }
 
 .merchandiseItems {

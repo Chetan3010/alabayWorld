@@ -1,6 +1,6 @@
 .socialMediaLinks {
     padding: 0 clamp(1rem, 5vw, 5rem);
-    padding-bottom: clamp(2rem, 5vw, 10rem);
+    padding-bottom: clamp(2rem, 10vh, 10rem);
     overflow: hidden;
 }
 
@@ -31,11 +31,11 @@
 .socialDogWrapper > div {
     position: absolute;
     background: url('/images/social-dog.png');
-    background-size: clamp(10rem, 30vw, 40rem);
+    background-size: clamp(10rem, 40vw, 40rem);
     background-position: center;
     background-repeat: no-repeat;
     z-index: -1;
-    width: clamp(10rem, 30vw, 40rem);
+    width: clamp(10rem, 40vw, 40rem);
     height: 100%;
     left: 0;
     top: 75%;

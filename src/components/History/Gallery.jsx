@@ -6,16 +6,16 @@ import styles from "./styles.module.css";
 const Gallery = () => {
 
     const gallery = [
-        { id: 1, title: "PHOTO 1", media_type: "photo" },
-        { id: 2, title: "VIDEO 1", media_type: "video" },
-        { id: 3, title: "PHOTO 2", media_type: "photo" },
-        { id: 4, title: "VIDEO 2", media_type: "video" },
-        { id: 5, title: "PHOTO 3", media_type: "photo" },
-        { id: 6, title: "VIDEO 3", media_type: "video" },
-        { id: 7, title: "PHOTO 4", media_type: "photo" },
-        { id: 8, title: "VIDEO 4", media_type: "video" },
-        { id: 9, title: "PHOTO 5", media_type: "photo" },
-        { id: 10, title: "VIDEO 5", media_type: "video" },
+        { id: 1, title: "PHOTO 1", media_type: "photos" },
+        { id: 2, title: "VIDEO 1", media_type: "videos" },
+        { id: 3, title: "PHOTO 2", media_type: "photos" },
+        { id: 4, title: "VIDEO 2", media_type: "videos" },
+        { id: 5, title: "PHOTO 3", media_type: "photos" },
+        { id: 6, title: "VIDEO 3", media_type: "videos" },
+        { id: 7, title: "PHOTO 4", media_type: "photos" },
+        { id: 8, title: "VIDEO 4", media_type: "videos" },
+        { id: 9, title: "PHOTO 5", media_type: "photos" },
+        { id: 10, title: "VIDEO 5", media_type: "videos" },
     ];
 
     const [data, setData] = useState(gallery);
